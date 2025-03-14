@@ -1,59 +1,184 @@
-/*-----------------------------------------------------------------------*/
-
+/* General Styles */
 body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-p {
-  font-family: 'Varela Round', sans-serif;
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 4em;
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-family: 'Varela Round', sans-serif;
-    font-size: 2em;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-/*-----------------------------------------------------------------------*/
-
-.aws_png {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  height: 20%;
-  width: 10%;
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
-.devopscloud_png {
-  position: absolute;
-  top: 33%;
-  left: 20%;
-  height: 20%;
-  width: 15%;
+/* Header */
+header {
+  background-color: #E4F9F5;
+  padding: 20px 0;
 }
 
-.terraform_png {
-  position: absolute;
-  top: 10%;
-  left: 90%;
-  height: 20%;
-  width: 10%;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-.docker_png {
-  position: absolute;
-  top: 33%;
-  left: 70%;
-  height: 20%;
-  width: 10%;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Profile Section */
 .profile {
+  padding: 100px 0;
   background-color: #E4F9F5;
   position: relative;
-  padding-top: 100px;
+}
+
+.profile-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.tech-icons {
+  margin-top: 20px;
+}
+
+.tech-icons img {
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Skills Section */
+.skills {
+  padding: 50px 0;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.skill-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-card i {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Contact Section */
+/* .contact-me {
+  padding: 50px 0;
+}
+
+.contact-me form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-me input, .contact-me textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-me button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-me button:hover {
+  background-color: #555;
+} */
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #E4F9F5;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }

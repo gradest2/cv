@@ -3,57 +3,140 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Mikhail Gerasimov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikhail Gerasimov - DevOps Engineer</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="middle-container">
-    <div class="profile">
-      <img class="aws_png" src="images/aws.png" alt="aws.png">
-      <img class="devopscloud_png" src="images/devopscloud.png" alt="devopscloud.png">
-      <img class="terraform_png" src="images/terraform.png" alt="terraform.png">
-      <img class="docker_png" src="images/docker.png" alt="docker.png">
-      <img class="" src="images/photo.png" alt="photo.png">
-      <h1>Mikhail Gerasimov</h1>
-      <p>
-        Hello! I am a DevOps/SysOps Engineer!
-      </p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="" src="images/skills.png" alt="skills.png">
-        <h3>DevOps/SysOps</h3>
-        <p>AWS, CI/CD (Jenkins, GitlabCI), Databaces (Oracle, PostgreSQL).</p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="profile">
+      <div class="profile-content">
+        <img src="images/photo.png" alt="Mikhail Gerasimov">
+        <h1>Mikhail Gerasimov</h1>
+        <p>Hello! I am a Senior DevOps Engineer with a passion for automation, cloud technologies, and building scalable systems.</p>
       </div>
-      <div class="skill-row">
-        <img class="" src="images/devops.png" alt="devops.png">
-        <h3>Developer</h3>
-        <p>Python, Groovy, SQL, WebDev (HTML, CSS).</p>
+      <div class="tech-icons">
+        <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS">
+        <img src="images/yc.png" alt="Yandex Cloud">
+        <img src="https://img.icons8.com/color/48/000000/terraform.png" alt="Terraform">
+        <img src="https://img.icons8.com/color/48/000000/ansible.png" alt="Ansible">
+        <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker">
+        <img src="https://img.icons8.com/color/48/000000/kubernetes.png" alt="Kubernetes">
+        <img src="https://helm.sh/img/helm.svg" alt="Helm">
+        <img src="https://img.icons8.com/color/48/000000/jenkins.png" alt="Jenkins">
+        <img src="https://img.icons8.com/color/48/000000/gitlab.png" alt="GitLab">
+        <img src="images/tc.png" alt="TeamCity">
+        <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL">
+        <img src="https://img.icons8.com/color/48/000000/oracle-logo.png" alt="Oracle Database">
+        <img src="https://img.icons8.com/color/48/000000/nginx.png" alt="Nginx">
+        <img src="https://img.icons8.com/color/48/000000/grafana.png" alt="Grafana">
+        <img src="https://img.icons8.com/color/48/000000/elasticsearch.png" alt="ELK Stack">
+        <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+        <img src="https://img.icons8.com/color/48/000000/bash.png" alt="Bash">
       </div>
-    </div>
-    <hr>
-    <div class="contact-me">
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Platforms</h3>
+          <p>AWS, Yandex Cloud</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-box"></i>
+          <h3>Containerization</h3>
+          <p>Docker, Kubernetes, Helm</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-cogs"></i>
+          <h3>CI/CD</h3>
+          <p>Jenkins, GitLab CI, TeamCity</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform, OpenTofu</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-terminal"></i>
+          <h3>Scripting & Automation</h3>
+          <p>Ansible, Python, Shell Scripting</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>Databases</h3>
+          <p>PostgreSQL, OracleDB, MySQL</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Programming</h3>
+          <p>Python, Groovy, Bash</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Security</h3>
+          <p>Vault, Security Best Practices</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-network-wired"></i>
+          <h3>Networking</h3>
+          <p>VPC, Subnets, Load Balancers, DNS</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <h3>Monitoring & Logging</h3>
+          <p>Prometheus, Grafana, ELK Stack, CloudWatch</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code-branch"></i>
+          <h3>Version Control</h3>
+          <p>Git, GitHub, GitLab, Bitbucket</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Performance Optimization</h3>
+          <p>Load Testing, Scaling, Resource Management</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="contact" class="contact-me">
       <h2>Get In Touch</h2>
-      <h3>Do you like DevOps practics or programming?</h3>
-      <p>Let's talk about how awesome it!</p>
-      <a class="btn" href="mailto:niamatt@yandex.ru">CONTACT ME</a>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">CONTACT ME</button>
+      </form>
+    </section>
+  </main> -->
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/mikhail-gerasimov-6057b397/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/gradest2/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://t.me/mikespb" target="_blank"><i class="fab fa-telegram"></i></a>
     </div>
-  </div>
-
-
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/mikhail-gerasimov-6057b397/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/YDpvtzDE9Ffruus">Twitter</a>
-    <a class="footer-link" href="https://gradest2.github.io/cv/">Website</a>
-    <p>© 2021 Mikhail Gerasimov</p>
-  </div>
-
+    <p>© 2025 Mikhail Gerasimov</p>
+  </footer>
 </body>
+
+</html>
